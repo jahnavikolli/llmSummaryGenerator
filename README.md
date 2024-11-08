@@ -33,20 +33,18 @@ venv\Scripts\activate
 
 }
 ```
-- **Stopping the Application**: How to stop the application from running.
-
-Feel free to adapt this to your specific needs (e.g., the specific API or server details for your project).
+- **Stopping the Application**: Enter ``` ctrl+C ``` to stop the server.  
 
 
 Project Summary
 Purpose: The API is designed to extract and summarize important information from earnings call transcripts of various companies. It aims to provide structured insights, such as key financial highlights, strategic updates, and regulatory information, which can be useful for investors and analysts.
 
-Technologies Used:
+-Technologies Used:
 
-Backend Framework: Flask is used to create the API endpoints.
-Large Language Model (LLM): The project uses Gemini 1.5 Flash for natural language processing and summarization.
-PDF Handling: The project involves extracting text from PDFs, which contain earnings call details.
-Token Management: Careful chunking of text ensures that the API efficiently handles the LLM’s token limit of 12,000 tokens.
+-Backend Framework: Flask is used to create the API endpoints.
+-Large Language Model (LLM): The project uses Gemini 1.5 Flash for natural language processing and summarization.
+-PDF Handling: The project involves extracting text from PDFs, which contain earnings call details.
+-Token Management: Careful chunking of text ensures that the API efficiently handles the LLM’s token limit of 12,000 tokens.
 
 Workflow:
 
@@ -54,7 +52,8 @@ Users send a POST request to the /earnings_transcript_summary endpoint, providin
 The text is split into manageable chunks, if necessary, to respect the LLM's token constraints.
 The LLM processes the text and returns a structured JSON response with specific fields (e.g., financial performance, future outlook, etc.).
 Summaries are compiled from individual chunk responses to produce a cohesive output.
-Features:
+
+-**Features**:
 
 Consistency Handling: The project addresses inconsistencies in LLM responses to ensure that important information is correctly captured.
 Structured JSON Output: The API delivers a well-organized response, making it easier to interpret and use for analysis.
