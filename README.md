@@ -5,13 +5,34 @@
 - **Clone the Repository**
 - **Set Up a Virtual Environment**:
 On Windows:
-'''
+```
 python -m venv venv
-venv\Scripts\activate   '''
-- **Install Dependencies**: Installs the required Python packages using `requirements.txt`.
-- **Set Up Environment Variables**: If you're using sensitive data like API keys, this section explains how to set those up via a `.env` file.
-- **Run the Flask Application**: Shows how to run the Flask app with the development server or Gunicorn for production.
-- **Access the API**: Explains how to access the local server once it's running.
+venv\Scripts\activate
+```
+- **Install Dependencies**: Install the required Python packages using `requirements.txt`.
+- **Set Up Environment Variables**: Generate GEMINI API KEY to utilize Gemini 1.5 Flash LLM Model. And add it to your `.env` file.
+- **Run the Flask Application**: Run the Flask app with the development server or Gunicorn for production.
+- **Extract PDF text**: Upload your file into data folder and access it through its path to extract the text compatable to send as JSON
+- **Access the API**: Send a POST request on `/earnings_transcript_summary'` endpoint.
+- **Input Structure**: Send a POST request in the following JSON format
+  ```
+  {
+    "company_name": "company_name", 
+    "transcript_text": "extracted_text_from_pdf"
+  }
+  ```
+- **Output Structure**:
+```
+{
+  "company_name": "Reliance Industries",
+  "financial_performance": "SHORT SUMMARY OF FINANCIAL PERFORMANCE",
+  "market_dynamics": "SHORT SUMMARY OF MARKET DYNAMICS",
+  "expansion_plans": "SHORT SUMMARY OF EXPANSION PLANS",
+  "environmental_risks": "SHORT SUMMARY OF ENVIRONMENTAL RISKS",
+  "regulatory_or_policy_changes": "SHORT SUMMARY OF REGULATORY OR POLICY CHANGES"
+
+}
+```
 - **Stopping the Application**: How to stop the application from running.
 
 Feel free to adapt this to your specific needs (e.g., the specific API or server details for your project).
