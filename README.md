@@ -2,8 +2,12 @@
 
 
 ### Explanation of Each Section:
-- **Clone the Repository**: This instructs users to clone the repo to their local machine.
-- **Set Up a Virtual Environment**: Sets up a virtual environment to manage project dependencies.
+- **Clone the Repository**
+- **Set Up a Virtual Environment**:
+On Windows:
+'''
+python -m venv venv
+venv\Scripts\activate   '''
 - **Install Dependencies**: Installs the required Python packages using `requirements.txt`.
 - **Set Up Environment Variables**: If you're using sensitive data like API keys, this section explains how to set those up via a `.env` file.
 - **Run the Flask Application**: Shows how to run the Flask app with the development server or Gunicorn for production.
