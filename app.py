@@ -61,8 +61,10 @@ def earnings_transcript_summary():
     except Exception as e:
         return jsonify({"error": str(e)}), 500  # Handle any exceptions that occur during processing
 
-if __name__ == '__main__':
-    app.run(host='127.0.0.1', port=5001, debug=True)
+
+# Uncomment this if running locally
+#if __name__ == '__main__':
+#    app.run(host='127.0.0.1', port=5001, debug=True)
 
 
 
