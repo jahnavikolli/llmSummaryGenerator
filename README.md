@@ -11,7 +11,7 @@ venv\Scripts\activate
 ```
 - **Install Dependencies**: Install the required Python packages using `requirements.txt`.
 - **Set Up Environment Variables**: Generate GEMINI API KEY to utilize Gemini 1.5 Flash LLM Model. And add it to your `.env` file.
-- **Run the Flask Application**: Run the Flask app with the development server or Gunicorn for production.
+- **Run the Flask Application**: Run the Flask app with the development server or Gunicorn for production. If running on development server uncomment the ```app.run()``` function and ```if ___main___ ===``` line.
 - **Extract PDF text**: Upload your file into data folder and access it through its path to extract the text compatable to send as JSON
 - **Access the API**: Send a POST request on `/earnings_transcript_summary'` endpoint.
 - **Input Structure**: Send a POST request in the following JSON format
