@@ -1,5 +1,18 @@
 # llmSummaryGenerator
 
+
+### Explanation of Each Section:
+- **Clone the Repository**: This instructs users to clone the repo to their local machine.
+- **Set Up a Virtual Environment**: Sets up a virtual environment to manage project dependencies.
+- **Install Dependencies**: Installs the required Python packages using `requirements.txt`.
+- **Set Up Environment Variables**: If you're using sensitive data like API keys, this section explains how to set those up via a `.env` file.
+- **Run the Flask Application**: Shows how to run the Flask app with the development server or Gunicorn for production.
+- **Access the API**: Explains how to access the local server once it's running.
+- **Stopping the Application**: How to stop the application from running.
+
+Feel free to adapt this to your specific needs (e.g., the specific API or server details for your project).
+
+
 Project Summary
 Purpose: The API is designed to extract and summarize important information from earnings call transcripts of various companies. It aims to provide structured insights, such as key financial highlights, strategic updates, and regulatory information, which can be useful for investors and analysts.
 
